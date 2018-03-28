@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01AE6B023EC6443946A9D458 /* Pods_PayUMoney.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 198729F743A367D6443873CE /* Pods_PayUMoney.framework */; };
 		E5A951982063D33400DE732D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A951972063D33400DE732D /* AppDelegate.swift */; };
 		E5A9519A2063D33500DE732D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A951992063D33500DE732D /* ViewController.swift */; };
 		E5A9519D2063D33500DE732D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5A9519B2063D33500DE732D /* Main.storyboard */; };
 		E5A9519F2063D33500DE732D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5A9519E2063D33500DE732D /* Assets.xcassets */; };
 		E5A951A22063D33500DE732D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5A951A02063D33500DE732D /* LaunchScreen.storyboard */; };
+		E5A951AE2063D4C400DE732D /* PlugNPlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5A951AD2063D4C400DE732D /* PlugNPlay.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		198729F743A367D6443873CE /* Pods_PayUMoney.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PayUMoney.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		339DFBCDD9C292FA28634C63 /* Pods-PayUMoney.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayUMoney.release.xcconfig"; path = "Pods/Target Support Files/Pods-PayUMoney/Pods-PayUMoney.release.xcconfig"; sourceTree = "<group>"; };
+		BDAC1AA37864AA1B79B54F8C /* Pods-PayUMoney.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayUMoney.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PayUMoney/Pods-PayUMoney.debug.xcconfig"; sourceTree = "<group>"; };
 		E5A951942063D33400DE732D /* PayUMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PayUMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5A951972063D33400DE732D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5A951992063D33500DE732D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,8 @@
 		E5A9519E2063D33500DE732D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5A951A12063D33500DE732D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5A951A32063D33500DE732D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5A951A92063D44E00DE732D /* PayUMoney-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PayUMoney-Bridging-Header.h"; sourceTree = "<group>"; };
+		E5A951AD2063D4C400DE732D /* PlugNPlay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PlugNPlay.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +36,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01AE6B023EC6443946A9D458 /* Pods_PayUMoney.framework in Frameworks */,
+				E5A951AE2063D4C400DE732D /* PlugNPlay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		318B7599F0745BC1165B6B14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				198729F743A367D6443873CE /* Pods_PayUMoney.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1EE4860C76BB4E587A5A018 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BDAC1AA37864AA1B79B54F8C /* Pods-PayUMoney.debug.xcconfig */,
+				339DFBCDD9C292FA28634C63 /* Pods-PayUMoney.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E5A9518B2063D33400DE732D = {
 			isa = PBXGroup;
 			children = (
 				E5A951962063D33400DE732D /* PayUMoney */,
 				E5A951952063D33400DE732D /* Products */,
+				B1EE4860C76BB4E587A5A018 /* Pods */,
+				318B7599F0745BC1165B6B14 /* Frameworks */,
+				E5A951A92063D44E00DE732D /* PayUMoney-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +83,7 @@
 		E5A951962063D33400DE732D /* PayUMoney */ = {
 			isa = PBXGroup;
 			children = (
+				E5A951AD2063D4C400DE732D /* PlugNPlay.framework */,
 				E5A951972063D33400DE732D /* AppDelegate.swift */,
 				E5A951992063D33500DE732D /* ViewController.swift */,
 				E5A9519B2063D33500DE732D /* Main.storyboard */,
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5A951A62063D33500DE732D /* Build configuration list for PBXNativeTarget "PayUMoney" */;
 			buildPhases = (
+				B993609709E900D738ECCC03 /* [CP] Check Pods Manifest.lock */,
 				E5A951902063D33400DE732D /* Sources */,
 				E5A951912063D33400DE732D /* Frameworks */,
 				E5A951922063D33400DE732D /* Resources */,
+				A058B001000235EDEDDCB4BA /* [CP] Embed Pods Frameworks */,
+				4CAB21D4B0D458F763555166 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +129,7 @@
 				TargetAttributes = {
 					E5A951932063D33400DE732D = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -130,6 +164,64 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4CAB21D4B0D458F763555166 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PayUMoney/Pods-PayUMoney-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A058B001000235EDEDDCB4BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PayUMoney/Pods-PayUMoney-frameworks.sh",
+				"${PODS_ROOT}/CitrusGraphics/Framework/graphics-sdk/CitrusGraphics.framework",
+				"${PODS_ROOT}/PayUmoney_CoreSDK/CoreSDK/PayUMoneyCoreSDK.framework",
+				"${PODS_ROOT}/PayUmoney_PnP/PlugNPlay/PlugNPlay.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CitrusGraphics.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PayUMoneyCoreSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PlugNPlay.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PayUMoney/Pods-PayUMoney-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B993609709E900D738ECCC03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PayUMoney-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E5A951902063D33400DE732D /* Sources */ = {
@@ -272,13 +364,21 @@
 		};
 		E5A951A72063D33500DE732D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDAC1AA37864AA1B79B54F8C /* Pods-PayUMoney.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PayUMoney",
+				);
 				INFOPLIST_FILE = PayUMoney/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.karpomkarpipoom.PayUMoney;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PayUMoney-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,13 +386,20 @@
 		};
 		E5A951A82063D33500DE732D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 339DFBCDD9C292FA28634C63 /* Pods-PayUMoney.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PayUMoney",
+				);
 				INFOPLIST_FILE = PayUMoney/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.karpomkarpipoom.PayUMoney;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PayUMoney-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
